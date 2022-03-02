@@ -1,4 +1,4 @@
-const [questionNoArg, args] = process.argv.slice(2)
+const [questionNoArg, ...args] = process.argv.slice(2)
 const questionNo = questionNoArg.padStart(3, '0')
 
 const question = require(`./answers/knock${questionNo}.js`)
